@@ -36,6 +36,7 @@
     <fabric8.label.group>quickstarts</fabric8.label.group>
     <fabric8.iconRef>camel</fabric8.iconRef>
   </properties>
+ 
   <distributionManagement>
     <snapshotRepository>
         <id>my-snapshots</id>
@@ -296,6 +297,91 @@
       <build>
         <defaultGoal>clean install docker:build fabric8:json fabric8:apply</defaultGoal>
       </build>
+    </profile>
+    <profile>
+      <repositories>
+        <repository>
+          <releases>
+            <updatePolicy>daily</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>JBoss Fuse repository</id>
+          <name>JBoss Fuse repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public/</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>daily</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>JBoss Fuse repository</id>
+          <name>JBoss Fuse repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public/</url>
+        </pluginRepository>
+      </pluginRepositories>
+       <id>JBoss Fuse repository</id>
+    </profile>
+    <profile>
+      <repositories>
+        <repository>
+          <releases>
+            <updatePolicy>daily</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>RedHat GA repository</id>
+          <name>RedHat GA repository</name>
+          <url>https://maven.repository.redhat.com/ga</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>daily</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>RedHat GA repository</id>
+          <name>RedHat GA repository</name>
+          <url>https://maven.repository.redhat.com/ga</url>
+        </pluginRepository>
+  </pluginRepositories>
+      <id>RedHat GA repository</id>
+    </profile>
+    <profile>
+      <repositories>
+        <repository>
+          <releases>
+            <updatePolicy>daily</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>json</id>
+          <url>https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.pom</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <releases>
+            <updatePolicy>daily</updatePolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>json</id>
+          <url>https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.pom</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>json</id>
     </profile>
   </profiles>
 
