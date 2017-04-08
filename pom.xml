@@ -36,6 +36,19 @@
     <fabric8.label.group>quickstarts</fabric8.label.group>
     <fabric8.iconRef>camel</fabric8.iconRef>
   </properties>
+  <distributionManagement>
+    <snapshotRepository>
+        <id>my-snapshots</id>
+        <name>My internal repository</name>
+        <url>http://192.168.0.18:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+
+    <repository>
+        <id>my-releases</id>
+        <name>My internal repository</name>
+        <url>http://192.168.0.18:8081/nexus/content/repositories/releases</url>
+    </repository>
+</distributionManagement>
 
   <dependencyManagement>
     <dependencies>
