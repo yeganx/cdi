@@ -11,6 +11,51 @@
   <name>Fabric8 :: Quickstarts :: CDI :: Camel and ActiveMQ</name>
   <description>Camel route using CDI and ActiveMQ in a standalone Java Container</description>
 
+    <repositories>
+       <repository>
+            <id>redhat-ga-repository</id>
+            <url>https://maven.repository.redhat.com/ga</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>redhat-ea-repository</id>
+            <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>redhat-ga-repository</id>
+            <url>https://maven.repository.redhat.com/ga</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>redhat-ea-repository</id>
+            <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -298,91 +343,7 @@
         <defaultGoal>clean install docker:build fabric8:json fabric8:apply</defaultGoal>
       </build>
     </profile>
-    <profile>
-      <repositories>
-        <repository>
-          <releases>
-            <updatePolicy>daily</updatePolicy>
-          </releases>
-          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-          </snapshots>
-          <id>JBoss Fuse repository</id>
-          <name>JBoss Fuse repository</name>
-          <url>https://repo.fusesource.com/nexus/content/groups/public/</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <releases>
-            <updatePolicy>daily</updatePolicy>
-          </releases>
-          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-          </snapshots>
-          <id>JBoss Fuse repository</id>
-          <name>JBoss Fuse repository</name>
-          <url>https://repo.fusesource.com/nexus/content/groups/public/</url>
-        </pluginRepository>
-      </pluginRepositories>
-       <id>JBoss Fuse repository</id>
-    </profile>
-    <profile>
-      <repositories>
-        <repository>
-          <releases>
-            <updatePolicy>daily</updatePolicy>
-          </releases>
-          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-          </snapshots>
-          <id>RedHat GA repository</id>
-          <name>RedHat GA repository</name>
-          <url>https://maven.repository.redhat.com/ga</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <releases>
-            <updatePolicy>daily</updatePolicy>
-          </releases>
-          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-          </snapshots>
-          <id>RedHat GA repository</id>
-          <name>RedHat GA repository</name>
-          <url>https://maven.repository.redhat.com/ga</url>
-        </pluginRepository>
-  </pluginRepositories>
-      <id>RedHat GA repository</id>
-    </profile>
-    <profile>
-      <repositories>
-        <repository>
-          <releases>
-            <updatePolicy>daily</updatePolicy>
-          </releases>
-          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-          </snapshots>
-          <id>json</id>
-          <url>https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.pom</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <releases>
-            <updatePolicy>daily</updatePolicy>
-          </releases>
-          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-          </snapshots>
-          <id>json</id>
-          <url>https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.pom</url>
-        </pluginRepository>
-      </pluginRepositories>
-      <id>json</id>
-    </profile>
+   
   </profiles>
 
 </project>
