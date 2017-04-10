@@ -93,6 +93,7 @@
     <fabric8.label.container>java</fabric8.label.container>
     <fabric8.label.group>quickstarts</fabric8.label.group>
     <fabric8.iconRef>camel</fabric8.iconRef>
+     <camel.version>2.18.0</camel.version>
   </properties>
  
   
@@ -122,11 +123,13 @@
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
+       <version>${camel.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-cdi</artifactId>
+       <version>${camel.version}</version>
     </dependency>
 
     <!-- cdi api -->
