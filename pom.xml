@@ -94,6 +94,7 @@
     <fabric8.label.group>quickstarts</fabric8.label.group>
     <fabric8.iconRef>camel</fabric8.iconRef>
      <camel.version>2.18.0</camel.version>
+     <activemq.version>5.12.1</activemq.version>
   </properties>
  
   
@@ -143,6 +144,7 @@
     <dependency>
       <groupId>org.apache.activemq</groupId>
       <artifactId>activemq-camel</artifactId>
+      <version>${activemq.version}</version>
     </dependency>
 
     <dependency>
